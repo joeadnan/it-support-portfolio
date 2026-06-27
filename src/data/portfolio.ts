@@ -15,7 +15,7 @@ export const profile = {
   email: "Hasyimjoe@gmail.com",
   phone: "+62 838-2135-9370",
   linkedin: "linkedin.com/in/mohammad-hasim-adnan",
-  github: "github.com/username",
+  github: "github.com/joeadnan/it-support-portfolio.git",
   summary:
     "Saya membantu operasional perusahaan tetap berjalan stabil melalui dukungan teknis, troubleshooting perangkat, jaringan, sistem, dokumentasi, dan improvement proses IT.",
 };
