@@ -6,9 +6,9 @@ export const profile = {
   email: "hasyimjoe@gmail.com",
   phone: "083821359370",
   whatsapp: "https://wa.me/6283821359370",
-  linkedin: "https://www.linkedin.com/in/username",
-  github: "https://github.com/username",
-  cv: "/cv-mohammad-hasim-adnan.pdf",
+  linkedin: "https://www.linkedin.com/in/mohammad-hasim-adnan/",
+  github: "https://github.com/joeadnan/it-support-portfolio",
+  cv: "/documents/IT_Mohammad_Hasim_Adnan.pdf",
   summary:
     "Saya membantu menangani masalah teknis harian seperti troubleshooting komputer, jaringan, printer, software, email, dan support user dengan dokumentasi kerja yang rapi.",
 };

@@ -1,6 +1,8 @@
 import { profile } from "../data/portfolio";
 
 export function Hero() {
+  console.log("Memeriksa data profil:", profile);
+  console.log("Tautan CV saat ini:", profile.cv);
   return (
     <section
       id="home"
@@ -29,6 +31,8 @@ export function Hero() {
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href={profile.cv}
+              target="_blank"
+              rel="noreferrer"
               download
               className="rounded-xl bg-sky-400 px-6 py-3 text-sm font-bold text-slate-950 transition hover:bg-sky-300"
             >
