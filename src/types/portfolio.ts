@@ -1,4 +1,5 @@
 export type SkillLevel = "Basic" | "Intermediate" | "Advanced";
+export type CertificationStatus = "Completed" | "In Progress" | "Planned";
 
 export type Skill = {
   title: string;
@@ -43,4 +44,29 @@ export type DocumentItem = {
   description: string;
   category: string;
   url: string;
+};
+
+export type Experience = {
+  role: string;
+  company: string;
+  period: string;
+  location: string;
+  employmentType: string;
+  summary: string;
+  responsibilities: string[];
+  achievements: string[];
+  tools: string[];
+};
+
+export type Certification = {
+  id: string;
+  title: string;
+  issuer: string;
+  year: string;
+  status: CertificationStatus;
+  category: string;
+  description: string;
+  skills: string[];
+  imageUrl?: string;
+  credentialUrl?: string;
 };

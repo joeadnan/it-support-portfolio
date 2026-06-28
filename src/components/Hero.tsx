@@ -1,8 +1,6 @@
 import { profile } from "../data/portfolio";
 
 export function Hero() {
-  console.log("Memeriksa data profil:", profile);
-  console.log("Tautan CV saat ini:", profile.cv);
   return (
     <section
       id="home"

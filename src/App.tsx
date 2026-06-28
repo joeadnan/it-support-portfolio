@@ -1,5 +1,7 @@
 import { About } from "./components/About";
+import { Certifications } from "./components/Certifications";
 import { Contact } from "./components/Contact";
+import { Experience } from "./components/Experience";
 import { Hero } from "./components/Hero";
 import { Learning } from "./components/Learning";
 import { Projects } from "./components/Projects";
@@ -14,6 +16,8 @@ export default function App() {
       <Hero />
       <About />
       <Skills />
+      <Experience />
+      <Certifications />
       <Workflow />
       <Projects />
       <Tools />
@@ -28,6 +32,9 @@ function Header() {
   const menus = [
     { label: "About", href: "#about" },
     { label: "Skills", href: "#skills" },
+    { label: "Experience", href: "#experience" },
+    { label: "Tools", href: "#tools" },
+    { label: "Certifications", href: "#certifications" },
     { label: "Workflow", href: "#workflow" },
     { label: "Projects", href: "#projects" },
     { label: "Contact", href: "#contact" },
