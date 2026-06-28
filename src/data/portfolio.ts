@@ -8,7 +8,7 @@ export const profile = {
   whatsapp: "https://wa.me/6283821359370",
   linkedin: "https://www.linkedin.com/in/mohammad-hasim-adnan/",
   github: "https://github.com/joeadnan/it-support-portfolio",
-  cv: "/documents/IT_Mohammad_Hasim_Adnan.pdf",
+  cv: "/documents/CV_Mohammad_Hasim_Adnan.pdf",
   summary:
     "Saya membantu menangani masalah teknis harian seperti troubleshooting komputer, jaringan, printer, software, email, dan support user dengan dokumentasi kerja yang rapi.",
 };
