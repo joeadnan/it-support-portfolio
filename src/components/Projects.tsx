@@ -47,25 +47,6 @@ export function Projects() {
                     ))}
                   </ul>
                 </div>
-
-                <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-5">
-                  <h4 className="font-bold text-white">Hasil</h4>
-                  <p className="mt-3 leading-7 text-slate-400">
-                    {project.result}
-                  </p>
-
-                  <h4 className="mt-5 font-bold text-white">Tools</h4>
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    {project.tools.map((tool) => (
-                      <span
-                        key={tool}
-                        className="rounded-full bg-white/10 px-3 py-1 text-xs text-slate-300"
-                      >
-                        {tool}
-                      </span>
-                    ))}
-                  </div>
-                </div>
               </div>
             </article>
           ))}

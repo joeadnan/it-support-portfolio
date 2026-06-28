@@ -1,5 +1,6 @@
 export type SkillLevel = "Basic" | "Intermediate" | "Advanced";
 export type CertificationStatus = "Completed" | "In Progress" | "Planned";
+export type CaseStudyLabel = "Real Case" | "Lab Practice";
 
 export type Skill = {
   title: string;
@@ -69,4 +70,31 @@ export type Certification = {
   skills: string[];
   imageUrl?: string;
   credentialUrl?: string;
+};
+
+export type DocumentationSample = {
+  title: string;
+  description: string;
+  fileUrl: string;
+  tags: string[];
+};
+
+export type EducationBackground = {
+  school: string;
+  major: string;
+  period: string;
+  description: string;
+  focus: string[];
+};
+
+export type AvailabilityInfo = {
+  status: string;
+  targetRoles: string[];
+  workTypes: string[];
+  location: string;
+};
+
+export type WhyHireMeItem = {
+  title: string;
+  description: string;
 };

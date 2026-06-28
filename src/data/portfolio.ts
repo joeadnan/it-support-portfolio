@@ -242,6 +242,28 @@ export const projects = [
     interviewPoint:
       "Saya terbiasa menggunakan checklist saat setup perangkat agar tidak ada konfigurasi penting yang terlewat.",
   },
+
+  {
+    title: "Troubleshooting Komputer Menyala Tapi Monitor Blank",
+    category: "Hardware Troubleshooting",
+    label: "Real Case",
+    problem:
+      "User melaporkan CPU menyala tetapi monitor tidak menampilkan gambar.",
+    steps: [
+      "Cek kabel HDMI/VGA dan power monitor",
+      "Cek input source monitor",
+      "Cek kondisi RAM",
+      "Tes menggunakan monitor dan kabel lain",
+      "Cek display output dari CPU",
+    ],
+    result:
+      "Masalah ditemukan pada RAM yang longgar. Setelah RAM dipasang ulang, komputer kembali normal.",
+    impact: [
+      "Masalah selesai tanpa penggantian hardware",
+      "Downtime user berkurang",
+      "Perangkat bisa digunakan kembali di hari yang sama",
+    ],
+  },
 ];
 
 export const tools = [
@@ -428,5 +450,86 @@ export const certifications: Certification[] = [
     description:
       "Terbiasa membantu user dalam penggunaan Microsoft Office, Excel, email, dokumen kerja, dan kebutuhan administrasi harian.",
     skills: ["Microsoft Word", "Excel", "Email", "Google Workspace"],
+  },
+];
+
+export const availability = {
+  status: "Open to Work",
+  targetRoles: [
+    "Junior IT Support",
+    "Helpdesk Support",
+    "Technical Support",
+    "IT Support Staff",
+  ],
+  workTypes: ["Onsite", "Hybrid", "Remote"],
+  location: "Indonesia",
+};
+
+export const educationBackground = {
+  school: "Masukkan nama sekolah / kampus / kursus",
+  major: "IT Support / Computer & Network Basics",
+  period: "2026",
+  description:
+    "Memiliki fokus pembelajaran pada troubleshooting komputer, jaringan dasar, sistem operasi, remote support, dan dokumentasi teknis.",
+  focus: [
+    "Hardware Troubleshooting",
+    "Operating System",
+    "Networking Basics",
+    "Remote Support",
+    "Technical Documentation",
+  ],
+};
+
+export const documentationSamples = [
+  {
+    title: "Preventive Maintenance Checklist",
+    description:
+      "Checklist pengecekan rutin perangkat komputer untuk membantu mencegah masalah hardware, software, dan performa sistem.",
+    fileUrl: "/documents/checklist-preventive-maintenance.pdf",
+    tags: ["Maintenance", "Checklist", "IT Asset"],
+  },
+  {
+    title: "SOP Instalasi Komputer Baru",
+    description:
+      "Panduan instalasi komputer baru mulai dari setup OS, driver, aplikasi kerja, user account, hingga pengecekan akhir.",
+    fileUrl: "/documents/sop-instalasi-komputer-baru.pdf",
+    tags: ["SOP", "Installation", "Windows"],
+  },
+  {
+    title: "Form Serah Terima Aset IT",
+    description:
+      "Template dokumentasi penyerahan perangkat IT kepada user agar aset lebih terkontrol dan mudah ditelusuri.",
+    fileUrl: "/documents/form-serah-terima-aset-it.pdf",
+    tags: ["Asset", "Documentation", "Handover"],
+  },
+  {
+    title: "Troubleshooting Guide Jaringan",
+    description:
+      "Panduan pengecekan dasar koneksi jaringan seperti IP address, gateway, DNS, ping test, dan koneksi internet.",
+    fileUrl: "/documents/troubleshooting-guide-jaringan.pdf",
+    tags: ["Network", "Troubleshooting", "DNS"],
+  },
+];
+
+export const whyHireMe = [
+  {
+    title: "Memiliki pola troubleshooting yang terstruktur",
+    description:
+      "Saya terbiasa menganalisa masalah dari pengecekan paling sederhana seperti kabel, power, koneksi, konfigurasi dasar, hingga pengecekan sistem.",
+  },
+  {
+    title: "Mampu membantu user non-teknis",
+    description:
+      "Saya berusaha menjelaskan masalah teknis dengan bahasa sederhana agar user memahami kondisi dan solusi yang diberikan.",
+  },
+  {
+    title: "Teliti dalam dokumentasi",
+    description:
+      "Saya memahami pentingnya dokumentasi seperti checklist maintenance, SOP instalasi, form aset, dan catatan penyelesaian masalah.",
+  },
+  {
+    title: "Siap berkembang sebagai Junior IT Support",
+    description:
+      "Portfolio ini saya buat untuk menunjukkan kesiapan saya dalam menjalankan tugas dasar IT Support, Helpdesk, dan Technical Support.",
   },
 ];

@@ -7,7 +7,7 @@ export function Contact() {
       <div className="mx-auto max-w-7xl">
         <SectionTitle
           eyebrow="Contact"
-          title="Mari Terhubung"
+          title="Hire Me"
           description="Saya terbuka untuk posisi Junior IT Support, Helpdesk, Technical Support, atau IT Staff."
         />
 

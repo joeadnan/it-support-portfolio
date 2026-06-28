@@ -1,4 +1,4 @@
-import { profile } from "../data/portfolio";
+import { profile, availability } from "../data/portfolio";
 
 export function Hero() {
   return (
@@ -52,6 +52,36 @@ export function Hero() {
             >
               Lihat Project
             </a>
+          </div>
+
+          <div className="mt-6 grid gap-3 rounded-3xl border border-white/10 bg-white/[0.04] p-4 text-sm text-slate-300 sm:grid-cols-2">
+            <div>
+              <p className="text-slate-500">Status</p>
+              <p className="font-semibold text-emerald-300">
+                {availability.status}
+              </p>
+            </div>
+
+            <div>
+              <p className="text-slate-500">Location</p>
+              <p className="font-semibold text-white">
+                {availability.location}
+              </p>
+            </div>
+
+            <div>
+              <p className="text-slate-500">Target Role</p>
+              <p className="font-semibold text-white">
+                {availability.targetRoles.slice(0, 2).join(" / ")}
+              </p>
+            </div>
+
+            <div>
+              <p className="text-slate-500">Work Type</p>
+              <p className="font-semibold text-white">
+                {availability.workTypes.join(" / ")}
+              </p>
+            </div>
           </div>
 
           <div className="mt-10 grid max-w-2xl gap-4 sm:grid-cols-3">

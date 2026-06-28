@@ -7,7 +7,7 @@ export function Skills() {
       <div className="mx-auto max-w-7xl">
         <SectionTitle
           eyebrow="Core Skills"
-          title="Kemampuan Utama IT Support"
+          title="Kemampuan Utama "
           description=""
         />
 

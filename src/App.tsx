@@ -1,12 +1,14 @@
 import { About } from "./components/About";
 import { Certifications } from "./components/Certifications";
 import { Contact } from "./components/Contact";
+import { DocumentationSamples } from "./components/DocumentationSamples";
 import { Experience } from "./components/Experience";
 import { Hero } from "./components/Hero";
 import { Learning } from "./components/Learning";
 import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 import { Tools } from "./components/Tools";
+import { WhyHireMe } from "./components/WhyHireMe";
 import { Workflow } from "./components/Workflow";
 
 export default function App() {
@@ -16,12 +18,14 @@ export default function App() {
       <Hero />
       <About />
       <Skills />
+      <Tools />
       <Experience />
-      <Certifications />
+      <DocumentationSamples />
+      <WhyHireMe />
       <Workflow />
       <Projects />
-      <Tools />
       <Learning />
+      <Certifications />
       <Contact />
       <Footer />
     </main>
@@ -32,11 +36,12 @@ function Header() {
   const menus = [
     { label: "About", href: "#about" },
     { label: "Skills", href: "#skills" },
-    { label: "Experience", href: "#experience" },
     { label: "Tools", href: "#tools" },
-    { label: "Certifications", href: "#certifications" },
+    { label: "Experience", href: "#experience" },
+    { label: "Documentation", href: "#documentation" },
     { label: "Workflow", href: "#workflow" },
     { label: "Projects", href: "#projects" },
+    { label: "Certifications", href: "#certifications" },
     { label: "Contact", href: "#contact" },
   ];
 
