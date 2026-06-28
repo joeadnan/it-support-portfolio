@@ -1,50 +1,88 @@
 import { profile } from "../data/portfolio";
-import { Reveal } from "./Reveal";
+import { SectionTitle } from "./SectionTitle";
 
 export function Contact() {
   return (
-    <section id="contact" className="section-pad pt-16">
-      <div className="site-container">
-        <Reveal>
-          <div className="glass-card relative grid overflow-hidden rounded-[2rem] p-7 md:p-12 lg:grid-cols-[1fr_360px] lg:items-center lg:gap-10">
-            <div className="pointer-events-none absolute -right-36 -top-36 size-80 rounded-full bg-orange-400/20 blur-2xl" />
+    <section id="contact" className="bg-slate-950 px-6 py-24 lg:px-8">
+      <div className="mx-auto max-w-7xl">
+        <SectionTitle
+          eyebrow="Contact"
+          title="Mari Terhubung"
+          description="Saya terbuka untuk posisi Junior IT Support, Helpdesk, Technical Support, atau IT Staff."
+        />
 
-            <div className="relative">
-              <span className="eyebrow">Contact</span>
-              <h2 className="section-heading">Siap untuk posisi IT Support</h2>
-              {/* <p className="section-description">
-                Gunakan template ini untuk website portfolio pribadi, lampiran
-                LinkedIn, atau bahan presentasi saat interview user.
-              </p> */}
-            </div>
-
-            <div className="relative mt-8 grid gap-3 lg:mt-0">
-              <a
-                href={`mailto:${profile.email}`}
-                className="rounded-2xl border border-white/10 bg-white/10 p-4 text-slate-300 transition hover:translate-x-1 hover:border-sky-400/40 hover:text-white"
-              >
-                ✉️ {profile.email}
-              </a>
-              <a
-                href={`https://${profile.linkedin}`}
-                target="_blank"
-                rel="noreferrer"
-                className="rounded-2xl border border-white/10 bg-white/10 p-4 text-slate-300 transition hover:translate-x-1 hover:border-sky-400/40 hover:text-white"
-              >
-                🔗 {profile.linkedin}
-              </a>
-              <a
-                href={`https://${profile.github}`}
-                target="_blank"
-                rel="noreferrer"
-                className="rounded-2xl border border-white/10 bg-white/10 p-4 text-slate-300 transition hover:translate-x-1 hover:border-sky-400/40 hover:text-white"
-              >
-                💻 {profile.github}
-              </a>
-            </div>
+        <div className="mx-auto max-w-3xl rounded-3xl border border-white/10 bg-white/[0.04] p-6 md:p-8">
+          <div className="space-y-4">
+            <ContactItem
+              label="Email"
+              value={profile.email}
+              href={`mailto:${profile.email}`}
+            />
+            <ContactItem
+              label="WhatsApp"
+              value={profile.phone}
+              href={profile.whatsapp}
+            />
+            <ContactItem
+              label="LinkedIn"
+              value="LinkedIn Profile"
+              href={profile.linkedin}
+            />
+            <ContactItem
+              label="GitHub"
+              value="GitHub Profile"
+              href={profile.github}
+            />
+            <ContactItem label="Lokasi" value={profile.location} />
           </div>
-        </Reveal>
+
+          <div className="mt-8 flex flex-wrap gap-4">
+            <a
+              href={profile.cv}
+              download
+              className="rounded-xl bg-sky-400 px-6 py-3 text-sm font-bold text-slate-950 transition hover:bg-sky-300"
+            >
+              Download CV
+            </a>
+
+            <a
+              href={profile.whatsapp}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-xl border border-white/15 bg-white/10 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/15"
+            >
+              Chat WhatsApp
+            </a>
+          </div>
+        </div>
       </div>
     </section>
+  );
+}
+
+type ContactItemProps = {
+  label: string;
+  value: string;
+  href?: string;
+};
+
+function ContactItem({ label, value, href }: ContactItemProps) {
+  return (
+    <div className="flex flex-col gap-1 rounded-2xl border border-white/10 bg-slate-950/70 p-4 sm:flex-row sm:items-center sm:justify-between">
+      <span className="text-sm text-slate-400">{label}</span>
+
+      {href ? (
+        <a
+          href={href}
+          target={href.startsWith("http") ? "_blank" : undefined}
+          rel={href.startsWith("http") ? "noreferrer" : undefined}
+          className="font-semibold text-sky-300 hover:text-sky-200"
+        >
+          {value}
+        </a>
+      ) : (
+        <span className="font-semibold text-white">{value}</span>
+      )}
+    </div>
   );
 }
