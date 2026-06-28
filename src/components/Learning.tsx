@@ -8,7 +8,7 @@ export function Learning() {
         <SectionTitle
           eyebrow="Learning"
           title="Pembelajaran & Hands-on Lab"
-          description="Bagian ini berguna jika pengalaman kerja formal masih terbatas. Fokuskan pada latihan nyata dan dokumentasi belajar."
+          description=""
         />
 
         <div className="rounded-3xl border border-white/10 bg-slate-950/80 p-6 md:p-8">

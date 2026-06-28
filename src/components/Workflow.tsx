@@ -8,7 +8,7 @@ export function Workflow() {
         <SectionTitle
           eyebrow="Workflow"
           title="Cara Saya Menangani Masalah IT"
-          description="Alur ini menunjukkan cara kerja saat menerima laporan user sampai masalah selesai dan terdokumentasi."
+          description=""
         />
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
