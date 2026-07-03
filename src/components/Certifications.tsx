@@ -1,3 +1,4 @@
+import React from "react";
 import { certifications } from "../data/portfolio";
 import type { CertificationStatus } from "../types/portfolio";
 import { Reveal } from "./Reveal";
@@ -32,14 +33,13 @@ export function Certifications() {
             <Reveal key={item.id} delay={index * 80}>
               <article className="group h-full overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] shadow-xl shadow-black/20 transition duration-300 hover:-translate-y-1 hover:border-sky-400/30 hover:bg-white/[0.06]">
                 {item.imageUrl && (
-                  <div className="relative aspect-[16/10] overflow-hidden border-b border-white/10 bg-slate-900">
+                  <div className="cursor-pointer rounded-xl border border-gray-700 bg-gray-900 p-3 transition duration-300 group-hover:border-sky-400/30 group-hover:bg-gray-800">
                     <img
                       src={item.imageUrl}
                       alt={item.title}
                       loading="lazy"
                       className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                     />
-
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
 
                     <div className="absolute bottom-4 left-4 right-4 flex flex-wrap gap-2">
