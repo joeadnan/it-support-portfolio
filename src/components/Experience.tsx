@@ -46,6 +46,15 @@ export function Experience() {
                     <p className="mt-6 leading-7 text-slate-300">
                       {experience.summary}
                     </p>
+                    <div>
+                      {experience.imageUrl && (
+                        <img
+                          src={experience.imageUrl}
+                          alt={experience.company}
+                          className="mt-4 rounded-lg shadow-lg"
+                        />
+                      )}
+                    </div>
                   </div>
 
                   <div className="space-y-6">

@@ -57,6 +57,7 @@ export type Experience = {
   responsibilities: string[];
   achievements: string[];
   tools: string[];
+  imageUrl?: string;
 };
 
 export type Certification = {

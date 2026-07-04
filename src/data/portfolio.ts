@@ -340,6 +340,7 @@ export const experiences: Experience[] = [
     period: "Desember 2024 - April 2026",
     location: "Jawilan, Serang",
     employmentType: "Full-time",
+    imageUrl: "/certifications/Paklaring IT.pdf-images.jpg",
     summary:
       "Berpengalaman menangani support user harian, troubleshooting hardware, software, jaringan, printer, instalasi perangkat kerja, serta dokumentasi masalah dan solusi IT.",
     responsibilities: [
@@ -438,6 +439,27 @@ export const certifications: Certification[] = [
     description:
       "Memahami dasar jaringan komputer, IP address, router, switch, DNS, DHCP, dan koneksi internet.",
     skills: ["TCP/IP", "DNS", "DHCP", "Router", "Switch", "Ping"],
+  },
+  {
+    id: "sql-for-it-support",
+    title: "Basic SQL for IT Support",
+    issuer: "Self Learning / IT Support Practice",
+    year: "2025",
+    status: "Completed",
+    category: "IT Support",
+    imageUrl: "/certifications/Database_Administrator_Course.jpg",
+    description:
+      "Mempelajari penggunaan SQL dasar untuk mendukung pekerjaan IT Support dan Application Support, seperti mengecek data user, mencari data transaksi, membaca struktur tabel, melakukan filter data, serta membantu analisis awal saat terjadi kendala pada aplikasi.",
+    skills: [
+      "Basic SQL",
+      "SELECT Query",
+      "WHERE Filter",
+      "Data Validation",
+      "Database Checking",
+      "Application Support",
+      "Troubleshooting",
+      "User Data Support",
+    ],
   },
   {
     id: "microsoft-office",
