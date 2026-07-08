@@ -465,7 +465,7 @@ export const certifications: Certification[] = [
   {
     id: "sql-for-it-support",
     title: "Basic SQL for IT Support",
-    issuer: "Wahana Ajar Bisnis 2025",
+    issuer: "Wahana Ajar Bisnis",
     year: "2026",
     status: "Completed",
     category: "IT Support",
