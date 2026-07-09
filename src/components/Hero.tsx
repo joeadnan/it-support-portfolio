@@ -183,7 +183,7 @@ export function Hero() {
 
             {/* Foto Profil Responsive (Menempel di Kanan Nama, Rata Atas) */}
             {/* Ukuran diperbesar: HP (80px) -> Tablet (96px) -> Laptop/PC (112px) */}
-            <div className="relative h-20 w-20 shrink-0 sm:h-24 sm:w-24 md:h-28 md:w-28 mt-1 md:mt-2">
+            <div className="relative h-24 w-24 shrink-0 sm:h-32 sm:w-32 md:h-36 md:w-36 mt-1 md:mt-2">
               <span className="absolute inset-0 animate-ping rounded-full bg-sky-400/10 opacity-75" />
               <img
                 src={profile.imageUrl || "https://unsplash.com"}
