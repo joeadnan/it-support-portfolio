@@ -11,6 +11,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/mohammad-hasim-adnan/",
   github: "https://github.com/joeadnan/it-support-portfolio",
   cv: "/documents/CV_Mohammad_Hasim_Adnan.pdf",
+  imageUrl: "documents/Fotojas.jpeg",
   summary:
     "IT Support Specialist dengan 2 Tahun Pengalaman. Berpengalaman menangani support user, troubleshooting perangkat, jaringan kantor, printer, dan dokumentasi IT.",
 };
