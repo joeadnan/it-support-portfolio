@@ -532,6 +532,28 @@ export const certifications: Certification[] = [
     ],
   },
   {
+    id: "digital-marketing-fundamental",
+    title: "Digital Marketing Fundamental",
+    issuer: "Self Learning / Marketing Practice",
+    year: "2025",
+    status: "Completed",
+    category: "Digital Marketing",
+    imageUrl: "/certifications/Digital_Marketing_Tingkat_Menengah.jpg",
+    description:
+      "Mempelajari dasar-dasar digital marketing, termasuk strategi pemasaran online, social media marketing, content marketing, SEO dasar, campaign planning, email marketing, analisis performa konten, serta penggunaan tools digital untuk mendukung promosi bisnis secara online.",
+    skills: [
+      "Digital Marketing",
+      "Social Media Marketing",
+      "Content Marketing",
+      "SEO Basics",
+      "Email Marketing",
+      "Campaign Planning",
+      "Performance Analysis",
+      "Marketing Strategy",
+      "Online Branding",
+    ],
+  },
+  {
     id: "microsoft-office",
     title: "Microsoft Office & Productivity",
     issuer: "Self Learning / Workplace Practice",
