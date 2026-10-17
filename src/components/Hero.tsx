@@ -44,7 +44,7 @@ export function Hero() {
                 <img
                   src={profile.imageUrl}
                   alt={profile.name}
-                  className="h-[220px] w-full object-cover object-top sm:h-[280px] lg:h-[365px]"
+                  className="w-full aspect-square lg:h-[365px] object-cover "
                 />
 
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/95 via-slate-950/60 to-transparent px-4 pb-4 pt-16">
